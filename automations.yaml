@@ -1,0 +1,20 @@
+- alias: Turn off
+  condition: []
+  id: 'turn_off'
+  trigger:
+    - platform: state
+      entity_id: switch.main_door
+      to: 'on'
+  action:
+    - service: script.turn_on
+      entity_id: script.timeout
+- alias: Reset timer
+  condition: []
+  id: 'reset_timer'
+  trigger:
+    - platform: state
+      entity_id: switch.main_door
+      to: 'off'
+  action:
+    - service: script.turn_off
+      entity_id: script.timeout

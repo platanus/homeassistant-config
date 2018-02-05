@@ -1,0 +1,17 @@
+# Python Cache
+__pycache__
+*.pyc
+
+# Logs
+*.log
+
+# Google Assistant
+google_assistant/creds.data
+
+# Others
+.HA_VERSION
+*.db
+*.save
+secrets.yaml
+tts
+.uuid
