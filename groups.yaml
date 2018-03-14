@@ -3,4 +3,4 @@ default_view:
  icon: mdi:home 
  entities:
    - switch.main_door
-   - switch.test
+   - switch.outside_door

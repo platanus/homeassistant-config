@@ -93,16 +93,13 @@ google_assistant:
 
 # Relay
 switch:
-  - platform: rpi_gpio
+  - platform: timeout_switch
     ports:
-      2: Main Door
-    invert_logic: true
-
-  # - platform: timeout_switch
-  #   ports:
-  #     2: Test
-  #   invert_logic: true
-  #   timeout: 00:00:01
+      4: Main Door
+      17: Outside Door
+      # 22: Unused
+      # 27: Unused
+    timeout: 00:00:01
 
 group: !include groups.yaml
 automation: !include automations.yaml
