@@ -12,6 +12,7 @@ google_assistant/creds.data
 .HA_VERSION
 *.db
 *.save
+entity_registry.yaml
 secrets.yaml
 tts
 .uuid
